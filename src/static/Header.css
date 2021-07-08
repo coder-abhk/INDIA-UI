@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 02em;
+  background-color: #050505;
+}
+
+.header_label {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #fff;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+  animation: labelEffect 2000ms ease-in-out 1200ms forwards;
+}
+
+@keyframes labelEffect {
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+#plant_ {
+  display: block;
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+  animation: plantEffect 2000ms ease-in-out 1200ms forwards;
+}
+
+@keyframes plantEffect {
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
