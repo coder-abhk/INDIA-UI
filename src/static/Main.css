@@ -149,6 +149,7 @@
 @media (max-width: 480px) {
   .main_wrapper {
     padding-left: 2em;
+    padding-right: 2em;
   }
 
   .headline_one,
