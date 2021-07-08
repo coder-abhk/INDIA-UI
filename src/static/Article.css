@@ -14,7 +14,7 @@
 }
 
 .header_wrapper h1 {
-  font-size: 65px;
+  font-size: 55px;
   opacity: 0;
   transform: translateY(65px);
   transition: opacity 1000ms ease-in-out, transform 1000ms ease-in-out;
