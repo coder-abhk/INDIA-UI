@@ -9,11 +9,11 @@
 .headline_two {
   font-size: 70px;
   clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
-  animation: textEffect 1000ms ease-in-out forwards;
+  animation: textEffect 2000ms ease-out 1500ms forwards;
 }
 
 .headline_two {
-  animation-delay: 700ms;
+  animation-delay: 1800ms;
 }
 
 @keyframes textEffect {
@@ -52,11 +52,11 @@
   opacity: 0;
   transform: translateY(25px);
   background-color: #000;
-  animation: translateEffect 1000ms ease-in-out 1000ms forwards;
+  animation: translateEffect 1000ms ease-out 3000ms forwards;
 }
 
 .quote_two {
-  animation-delay: 1500ms;
+  animation-delay: 3600ms;
 }
 
 @keyframes translateEffect {
