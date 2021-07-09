@@ -1,5 +1,6 @@
 .article_wrapper {
   width: 100%;
+  overflow: hidden;
 }
 
 .article_inner {
@@ -26,6 +27,7 @@
   align-items: center;
   color: #fff;
   padding: 4em;
+  overflow: hidden;
   background-color: #000;
 }
 
@@ -35,6 +37,7 @@
   font-size: 14px;
   color: #5d5d5d;
   opacity: 1;
+  overflow: hidden;
   transform: translateY(55px);
   transition: opacity 1400ms ease-out, transform 1400ms ease-out;
 }
@@ -45,6 +48,7 @@
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .img_ {
