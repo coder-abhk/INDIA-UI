@@ -8,7 +8,33 @@ const ArticleSection = ({
 }) => {
   const label = useRef(null);
   const content_paras = useRef(null);
+  const article_img_one = useRef(null);
+  const article_img_two = useRef(null);
+
   useEffect(() => {
+    const images = [article_img_one.current, article_img_two.current];
+    // options
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.85,
+    };
+
+    // callback
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > 0) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = `translateX(${0})`;
+        }
+      });
+    };
+    const observer = new IntersectionObserver(callback, options);
+
+    images.forEach((img) => {
+      observer.observe(img);
+    });
+
     window.addEventListener(
       "scroll",
       () => {
@@ -46,8 +72,20 @@ const ArticleSection = ({
         </div>
       </div>
       <div className="article_images">
-        <img id="article_img_one" className="img_" src={img_one} alt="" />
-        <img id="article_img_two" className="img_" src={img_two} alt="" />
+        <img
+          id="article_img_one"
+          ref={article_img_one}
+          className="img_"
+          src={img_one}
+          alt=""
+        />
+        <img
+          id="article_img_two"
+          ref={article_img_two}
+          className="img_"
+          src={img_two}
+          alt=""
+        />
       </div>
     </div>
   );

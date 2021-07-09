@@ -55,14 +55,10 @@
 
 #article_img_one,
 #article_img_two {
+  opacity: 0;
   border-radius: 100px;
-  transform: scale(0.9) skewY(2deg);
-  transition: transform 400ms ease-in-out;
-}
-
-#article_img_one:hover,
-#article_img_two:hover {
-  transform: scale(1) skewY(-2deg);
+  transform: translateX(50px);
+  transition: all 1000ms ease-in-out;
 }
 
 @media (max-width: 968px) {
